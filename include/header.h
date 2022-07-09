@@ -25,6 +25,12 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
+typedef struct	s_window
+{
+	void	*mlx;
+	void	*window;
+}				t_window;
+
 typedef struct	s_vector
 {
 	int	x;
@@ -48,12 +54,6 @@ typedef struct	s_sprite
 	int		height;
 	void	*img;
 }				t_sprite;
-
-typedef struct	s_window
-{
-	void	*mlx;
-	void	*window;
-}				t_window;
 
 typedef struct	s_img
 {
@@ -81,6 +81,9 @@ t_map	*rtn_map(void);
 //keys
 int		ft_key_hook(int keycode, t_window *w);
 void	key_listener(void *w);
+
+//parser
+void	init_parse(t_game *game);
 
 //calloc
 void	*ft_memset(void *s, int c, size_t n);
