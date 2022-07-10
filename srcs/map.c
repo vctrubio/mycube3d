@@ -16,7 +16,7 @@ t_map	*init_map(t_list *lst)
 	int		i;
 
 	map = malloc(sizeof(t_map));
-	map->max_y = ft_lstsize(lst);
+	map->max_y = ft_lstsize(lst) - 1;
 	map->max_x = ft_strlen(lst->content); //assuming its even
 	map->map = ft_calloc(map->max_y + 1, sizeof(char *));
 	i = 0;

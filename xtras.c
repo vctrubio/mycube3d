@@ -44,30 +44,30 @@ void	img_pixel_put(t_img *img, int x, int y, int color)
 
 // }
 
-int main2()
-{
-	init_prg();
-	init_window(200, 400, "Title");
+// int main2()
+// {
+// 	init_prg();
+// 	init_window(200, 400, "Title");
 
-	mlx_hook((ft_window())->mlx_window, 2, 1, key_down, NULL); 
-	mlx_hook((ft_window())->mlx_window, 3, 1, key_up, NULL);
+// 	mlx_hook((ft_window())->mlx_window, 2, 1, key_down, NULL); 
+// 	mlx_hook((ft_window())->mlx_window, 3, 1, key_up, NULL);
 
-<<<<<<< HEAD:xtras.c
-	int i; int j;
-	i = 0; j = 5;
-	while (i <= 10)
-	{
-		img_pixel_put(img, i, j, 0x000000);
-		i++;
-	}
+// <<<<<<< HEAD:xtras.c
+// 	int i; int j;
+// 	i = 0; j = 5;
+// 	while (i <= 10)
+// 	{
+// 		img_pixel_put(img, i, j, 0x000000);
+// 		i++;
+// 	}
 
-	mlx_put_image_to_window(w->mlx_ptr, w->mlx_window, w->img->img, 0, 0);
+// 	mlx_put_image_to_window(w->mlx_ptr, w->mlx_window, w->img->img, 0, 0);
 
-	mlx_key_hook(w->mlx_window, ft_key_hook, w);
-	mlx_loop(w->mlx_ptr);
+// 	mlx_key_hook(w->mlx_window, ft_key_hook, w);
+// 	mlx_loop(w->mlx_ptr);
 
-	return (43);
-}
+// 	return (43);
+// }
 
 	// mlx_put_image_to_window(w->mlx_ptr, w->mlx_window, w->img->img, 0, 0);
 	// printf("info: %dbbp %dline_length %dendian\n", img->bits_per_pixel, img->line_length, img->endian);

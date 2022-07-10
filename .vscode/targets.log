@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Sat Jul  9 21:27:46 2022
+# Make data base, printed on Sun Jul 10 21:52:42 2022
 
 # Variables
 
@@ -23,8 +23,6 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 HOMEBREW_NO_ANALYTICS = 1
 # environment
 LC_CTYPE = UTF-8
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
@@ -44,7 +42,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/make
 # environment
-VSCODE_PID = 45064
+VSCODE_PID = 96107
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # makefile (from `Makefile', line 2)
@@ -53,16 +51,12 @@ SRCS = $(wildcard ./srcs/*.c)
 rvm_ruby_mode = 
 # environment
 rvm_ruby_make = 
-# environment
-VSCODE_VERBOSE_LOGGING = true
 # makefile (from `Makefile', line 3)
 OBJS = $(SRCS:.c=.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/vscode-ipc-d4bfbfa8-e7e5-4cd1-a230-797e9d3eb5ae.sock
+VSCODE_CWD = /Users/V/Documents/42/summer22/mycube3d
 # environment
-VSCODE_CWD = /Users/V/Documents/42/summer22
-# environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.bRtF9Zk2R2/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.uFLaE1mQLi/Render
 # environment
 rvm_pretty_print_flag = 
 # environment
@@ -78,23 +72,19 @@ rvm_only_path_flag =
 # environment
 rvm_gemstone_package_file = 
 # environment
-VSCODE_LOG_STACK = false
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
 rvm_alias_expanded = 
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.zEblp0vVdD/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.8njQWwByo1/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-TTY = /dev/ttys001
+TTY = /dev/ttys000
 # environment
 FIG_ENV_VAR = 1
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 rvm_bin_path = /Users/V/.rvm/bin
 # environment
@@ -114,7 +104,7 @@ MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /De
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/V/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /Users/V/Library/Application Support/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
 LOGNAME = V
 # environment
@@ -141,6 +131,7 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 IRBRC = /Users/V/.rvm/rubies/ruby-2.5.3/.irbrc
+ 
 # environment
 SHLVL = 3
 # environment
@@ -152,7 +143,7 @@ USER = V
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = EB70AA8A-4284-45D0-B0E9-A74193C1B497
+TERM_SESSION_ID = 34A774A8-2189-4D57-AAA5-6B14F7DD6DC5
 # environment
 rvm_version = 1.29.10-next (master)
 # environment
@@ -170,7 +161,7 @@ TMPDIR = /var/folders/dx/1mwgg8zn23964hxvr_jsm4vh0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/V/Library/Application Support/Code/1.68.1-main.sock
+VSCODE_IPC_HOOK = /Users/V/Library/Application Support/Code/1.69.0-main.sock
 # makefile
 MAKEFLAGS = Rrqp
 # makefile (from `Makefile', line 1)
@@ -207,14 +198,11 @@ PAGER = less
 LC_ALL = C
 # environment
 rvm_bin_flag = 
-# environment
-SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # environment
 rvm_prefix = /Users/V
 # default
- 
 SUFFIXES := 
 # environment
 rvm_ruby_file = 
@@ -235,7 +223,7 @@ MY_RUBY_HOME = /Users/V/.rvm/rubies/ruby-2.5.3
 # environment
 rvm_nightly_flag = 
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=8/139=6%
+# Load=105/1024=10%, Rehash=0, Collisions=8/133=6%
 
 # Pattern-specific Variable Values
 
@@ -244,9 +232,9 @@ rvm_nightly_flag =
 # Directories
 
 # . (device 16777220, inode 8635430456): 13 files, no impossibilities.
-# ./srcs (device 16777220, inode 8635430639): 10 files, no impossibilities.
+# ./srcs (device 16777220, inode 8635430639): 11 files, no impossibilities.
 
-# 23 files, no impossibilities in 2 directories.
+# 24 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -338,6 +326,6 @@ clean:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul  9 21:27:46 2022
+# Finished Make data base on Sun Jul 10 21:52:42 2022
 
  

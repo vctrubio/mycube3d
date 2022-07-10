@@ -15,8 +15,8 @@
 # define HEIGHT 200
 # define WIDTH 400
 
-# define SDHEIGHT 5
-# define SDWIDTH 5
+# define SDHEIGHT 2
+# define SDWIDTH 2
 # define BUFFER_SIZE 1
 
 typedef struct	s_list
@@ -59,11 +59,20 @@ typedef struct	s_img
 {
 	t_window	*window;
 	void		*img;
-	char		*addr;
-	int			bits_per_pixel;
-	int			line_length;
-	int			endian;
+	int			x;
+	int			y;
+	int			height;
+	int			width;
 }				t_img;
+
+typedef struct s_ray
+{
+	float	camera;
+	double	dir_x;
+	double	dir_y;
+	int		pos_x;
+	int		pos_y;
+}				t_ray;
 
 typedef struct	s_game
 {
@@ -72,7 +81,7 @@ typedef struct	s_game
 	t_sprite	*player;
 }				t_game;
 //static
-t_map	*_map(void);
+t_game	*_game(void);
 
 //map
 void	print_map(t_map *map);

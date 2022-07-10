@@ -14,9 +14,10 @@ t_game	*rtn_game(void)
 {
 	t_game	*game;
 
-	game = malloc(sizeof(t_game));
+	game = _game();
 	return (game);
 }
+
 
 
 int main()
@@ -26,10 +27,11 @@ int main()
 	game = rtn_game();
 	game->w = rtn_window();
 	game->map =  rtn_map();
-	print_map(game->map);
 	game->w->mlx = mlx_init();
+	// printf("max_x max_y %d %d\n", game->map->max_x, game->map->max_y);
 	game->w->window = mlx_new_window(game->w->mlx, game->map->max_x * 64, game->map->max_y * 64, "Helloword");
 
+	print_map(game->map);
 	init_parse(game); //on here
 
 	key_listener(game->w->window);

@@ -1,8 +1,8 @@
 #include "../include/header.h"
 
-t_map	*_map(void)
+t_game	*_game(void)
 {
-	static t_map map;
+	static t_game game;
 
-	return (&map);
+	return (&game);
 }

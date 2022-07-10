@@ -1,5 +1,17 @@
 #include "../include/header.h"
 
+void	move_play(int keycode)
+{
+	t_game	*game;
+
+	game = _game();
+	if (keycode == K_D)
+	{
+		printf("move right\n");
+		game->player->pos_x += 1;
+	}
+}
+
 static int	ft_key_(int keycode)
 {
 	if (keycode == K_Q)
@@ -7,23 +19,14 @@ static int	ft_key_(int keycode)
 		printf("Key01\n");
 		exit(1);
 	}
-	return (0);
-}
-
-int		ft_key_hook(int keycode, t_window *w)
-{
-	if (keycode == 15)
+	if (keycode == K_D)
 	{
-		printf("Key01\n");
-		exit(1);
+		move_play(K_D);
+		printf("Key02\n");
 	}
-	if (keycode == 2)
-		printf("Key02\n");
-	if (keycode == 4)
-		printf("Key02\n");
-
 	return (0);
 }
+
 
 void	key_listener(void *w)
 {
