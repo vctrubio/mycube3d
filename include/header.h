@@ -12,8 +12,8 @@
 # include <stdbool.h>
 # include <stdarg.h>
 
-# define HEIGHT 200
-# define WIDTH 400
+# define WHEIGHT 600
+# define WWIDTH 900
 
 # define SDHEIGHT 2
 # define SDWIDTH 2
@@ -44,42 +44,20 @@ typedef struct	s_map
 	int		max_x;
 }				t_map;
 
-typedef struct	s_sprite
-{
-	// int		y;
-	// int		x;
-	int		pos_y;
-	int		pos_x;
-	int		width;
-	int		height;
-	void	*img;
-}				t_sprite;
-
-typedef struct	s_img
-{
-	t_window	*window;
-	void		*img;
-	int			x;
-	int			y;
-	int			height;
-	int			width;
-}				t_img;
-
-typedef struct s_ray
-{
-	float	camera;
-	double	dir_x;
-	double	dir_y;
-	int		pos_x;
-	int		pos_y;
-}				t_ray;
-
 typedef struct	s_game
 {
 	t_window	*w;
 	t_map		*map;
-	t_sprite	*player;
+	double		pos_x;
+	double		pos_y;
+	double		dir_x;
+	double		dir_y;
+	double		plane_x;
+	double		plane_y;
+	double		moveSpeed;
+	double		rotSpeed;
 }				t_game;
+
 //static
 t_game	*_game(void);
 
@@ -93,6 +71,9 @@ void	key_listener(void *w);
 
 //parser
 void	init_parse(t_game *game);
+
+//inits
+void	init_play_pov(void);
 
 //calloc
 void	*ft_memset(void *s, int c, size_t n);

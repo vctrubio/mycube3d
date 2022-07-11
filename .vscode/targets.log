@@ -6,11 +6,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Sun Jul 10 21:52:42 2022
+# Make data base, printed on Mon Jul 11 18:37:46 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
@@ -42,7 +44,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/make
 # environment
-VSCODE_PID = 96107
+VSCODE_PID = 10840
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # makefile (from `Makefile', line 2)
@@ -56,7 +58,7 @@ OBJS = $(SRCS:.c=.o)
 # environment
 VSCODE_CWD = /Users/V/Documents/42/summer22/mycube3d
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.uFLaE1mQLi/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.KjYhaDWxmk/Render
 # environment
 rvm_pretty_print_flag = 
 # environment
@@ -78,7 +80,7 @@ rvm_alias_expanded =
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.8njQWwByo1/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Rj4iKifuZV/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -131,7 +133,6 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 IRBRC = /Users/V/.rvm/rubies/ruby-2.5.3/.irbrc
- 
 # environment
 SHLVL = 3
 # environment
@@ -143,7 +144,7 @@ USER = V
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = 34A774A8-2189-4D57-AAA5-6B14F7DD6DC5
+TERM_SESSION_ID = BC2748C4-B8FE-416B-9FEF-10A3D7538AFF
 # environment
 rvm_version = 1.29.10-next (master)
 # environment
@@ -231,10 +232,10 @@ rvm_nightly_flag =
 
 # Directories
 
-# . (device 16777220, inode 8635430456): 13 files, no impossibilities.
+# . (device 16777220, inode 8635430456): 14 files, no impossibilities.
 # ./srcs (device 16777220, inode 8635430639): 11 files, no impossibilities.
 
-# 24 files, no impossibilities in 2 directories.
+# 25 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -326,6 +327,6 @@ clean:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sun Jul 10 21:52:42 2022
+# Finished Make data base on Mon Jul 11 18:37:46 2022
 
  

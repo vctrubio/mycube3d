@@ -8,7 +8,7 @@ void	move_play(int keycode)
 	if (keycode == K_D)
 	{
 		printf("move right\n");
-		game->player->pos_x += 1;
+		
 	}
 }
 

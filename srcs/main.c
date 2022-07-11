@@ -28,12 +28,14 @@ int main()
 	game->w = rtn_window();
 	game->map =  rtn_map();
 	game->w->mlx = mlx_init();
-	// printf("max_x max_y %d %d\n", game->map->max_x, game->map->max_y);
-	game->w->window = mlx_new_window(game->w->mlx, game->map->max_x * 64, game->map->max_y * 64, "Helloword");
 
+	printf("max_x max_y %d %d\n", game->map->max_x, game->map->max_y);
 	print_map(game->map);
+
 	init_parse(game); //on here
 
+
+	game->w->window = mlx_new_window(game->w->mlx, WWIDTH, WHEIGHT, "Helloword");
 	key_listener(game->w->window);
 	mlx_loop(game->w->mlx);
 	printf("hello_end_world\n");
